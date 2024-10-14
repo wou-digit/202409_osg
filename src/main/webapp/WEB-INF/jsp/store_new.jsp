@@ -12,7 +12,7 @@
 	<div class="container">
 		<h2>Create New Store</h2>
 		
-		<form:form action="/stores/new" modelattribute="store">
+		<form:form action="/stores/new" method="POST" modelattribute="store">
 			<div class="form-group">
 				<label for="name">Name</label>
 				<input type="text" name="name" required />

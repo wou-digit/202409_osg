@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +35,15 @@
 					<td>${store.description}</td>
 					<td>${store.address}</td>
 					<td>${store.phone}</td>
-					<td><button>Edit</button> <button><a href="/stores/${store.id}">Delete</a></button></td>
+					<td>
+						<div class="container-group" style="display: flex;">
+							<button style="margin-right: 3px;"><a href="/stores/${store.id}">Edit</a></button>
+							
+							<form:form action="/stores/${store.id}" method="POST">
+								<button type="submit">Delete</button>
+							</form:form>
+						</div>
+					</td>
 				</tr>
 				</c:forEach>
 			</tbody>

@@ -52,7 +52,7 @@ public class StoreController {
 		}
 	}
 	
-	@GetMapping("/stores/{id}")
+	@PostMapping("/stores/{id}")
 	public String deleteStoreById(@PathVariable("id") Long id, Model model) {
 		boolean status = storeService.deleteStore(id);
 		
