@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.__osg.entity.Store;
+import com.example.__osg.exception.StoreNotFoundException;
 import com.example.__osg.repository.StoreRepository;
 
 import jakarta.transaction.Transactional;
@@ -38,7 +39,7 @@ public class StoreService {
 	}
 	
 	public Store getStoreById(Long id) {
-		return storeRepository.findById(id).get();
+		return storeRepository.findById(id).orElseThrow(() -> new StoreNotFoundException("Store not found."));
 	}
 	
 	public Store updateStore(Long id, Store store) {
