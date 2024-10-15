@@ -5,13 +5,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.__osg.entity.Store;
 import com.example.__osg.service.StoreService;
@@ -43,7 +41,6 @@ public class StoreController {
 		Store createdStore = storeService.createNewStore(store);
 		
 		if(createdStore != null) {
-			model.addAttribute("msg_success", "Store created successfully.");
 			return "redirect:/stores";
 			
 		} else {
@@ -62,6 +59,33 @@ public class StoreController {
 			
 		} else {
 			return "redirect:/stores";
+		}
+	}
+	
+	@GetMapping("/stores/{id}")
+	public String getStorePage(@PathVariable("id") Long id, Model model) {
+		Store existedStore = storeService.getStoreById(id);
+		
+		if(existedStore != null) {
+			model.addAttribute("store", existedStore);
+			System.err.println("Store found! Allow edit.");
+			return "store";
+
+		} else {
+			model.addAttribute("errorMessage", "Store not found.");
+			return "storeNotFound";
+		}
+	}
+	
+	@PostMapping("/stores/{id}/update")
+	public String updateStore(@PathVariable("id") Long id, Model model, @ModelAttribute("store") Store store) {
+		Store savedStore = storeService.updateStore(id, store);
+		
+		if(savedStore != null) {
+			return "redirect:/stores";
+		} else {
+			model.addAttribute("errorMessage", "Cannot update store.");
+			return "stores";
 		}
 	}
 }

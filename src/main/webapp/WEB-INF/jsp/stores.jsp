@@ -31,14 +31,12 @@
 				<c:forEach var="store" items="${stores}" varStatus="status">
 				<tr>
 					<td>${status.index + 1}</td>
-					<td>${store.name}</td>
+					<td><a href="/stores/${store.id}">${store.name}</a></td>
 					<td>${store.description}</td>
 					<td>${store.address}</td>
 					<td>${store.phone}</td>
 					<td>
-						<div class="container-group" style="display: flex;">
-							<button style="margin-right: 3px;"><a href="/stores/${store.id}">Edit</a></button>
-							
+						<div class="container-group">
 							<form:form action="/stores/${store.id}" method="POST">
 								<button type="submit">Delete</button>
 							</form:form>

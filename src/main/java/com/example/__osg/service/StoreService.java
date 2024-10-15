@@ -36,4 +36,24 @@ public class StoreService {
 			return false;
 		}
 	}
+	
+	public Store getStoreById(Long id) {
+		return storeRepository.findById(id).get();
+	}
+	
+	public Store updateStore(Long id, Store store) {
+		Store savedStore = storeRepository.getReferenceById(id);
+		
+		if(savedStore != null) {
+			savedStore.setName(store.getName());
+			savedStore.setDescription(store.getDescription());
+			savedStore.setAddress(store.getAddress());
+			savedStore.setPhone(store.getPhone());
+			
+			return storeRepository.save(savedStore);
+			
+		} else {
+			return null;
+		}
+	}
 }
