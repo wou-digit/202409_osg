@@ -7,6 +7,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Store | New</title>
+<style>
+.form-group {
+	display: flex;
+	padding: 5px 0;
+}
+
+.form-group label {
+	width: 100px;
+}
+
+.form-group button {
+	margin-right: 5px;
+}
+</style>
 </head>
 <body>
 	<div class="container">
