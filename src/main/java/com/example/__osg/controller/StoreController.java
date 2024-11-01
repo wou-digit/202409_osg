@@ -62,14 +62,12 @@ public class StoreController {
 		Store existedStore = storeService.getStoreById(id);
 		
 		model.addAttribute("store", existedStore);
-		System.err.println("Store found! Allow edit.");
 		return "store";
 	}
 	
 	@ExceptionHandler(StoreNotFoundException.class)
 	public String handleStoreNotFound(StoreNotFoundException ex, Model model) {
 		model.addAttribute("errorMessage", ex.getMessage());
-		System.err.println(ex.getMessage());
 		return "StoreNotFound";
 	}
 	
