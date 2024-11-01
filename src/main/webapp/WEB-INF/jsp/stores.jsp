@@ -7,50 +7,49 @@
 <head>
 <meta charset="UTF-8">
 <title>Stores</title>
+<style>
+
+.container-flex {
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin: 5px 10px;
+	padding: 5px 5px;
+	height: 240px;
+	width: 300px;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+button {
+	width: 100px;
+}
+</style>
 </head>
 <body>
-
-	<div class="container">
-		<c:if test="${empty stores}">
-		<p>Store(s) not found.</p>
-		</c:if>
-		
-		<c:if test="${not empty stores }">
-		<table>
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>name</th>
-					<th>description</th>
-					<th>address</th>
-					<th>phone</th>
-					<th>#action</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach var="store" items="${stores}" varStatus="status">
-				<tr>
-					<td>${status.index + 1}</td>
-					<td><a href="/stores/${store.id}">${store.name}</a></td>
-					<td>${store.description}</td>
-					<td>${store.address}</td>
-					<td>${store.phone}</td>
-					<td>
-						<div class="container-group">
-							<form:form action="/stores/${store.id}" method="POST">
-								<button type="submit">Delete</button>
-							</form:form>
-						</div>
-					</td>
-				</tr>
-				</c:forEach>
-			</tbody>
-		</table>
-		</c:if>
-	</div>
-	
 	<div class="container">
 		<p>Add New Store <a href="/stores/new">+</a></p>
+	</div>
+	
+	<div class="container-flex">
+		
+		<c:if test="${not empty stores}">
+		<c:forEach var="store" items="${stores}" varStatus="status">
+		<div class="card">
+			<h2>${store.name}</h2>
+			<p>${store.description}</p>
+			<p>Address: ${store.address}<p>
+			<p>Phone: ${store.phone}</p>
+			<button>Edit</button>
+			<button>Delete</button>
+		</div>
+		</c:forEach>
+		</c:if>
+		
 	</div>
 
 </body>
