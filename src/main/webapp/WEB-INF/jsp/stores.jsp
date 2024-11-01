@@ -31,7 +31,7 @@ button {
 </style>
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="margin-left: 10px;">
 		<p>Add New Store <a href="/stores/new">+</a></p>
 	</div>
 	
