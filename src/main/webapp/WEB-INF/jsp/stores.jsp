@@ -40,12 +40,13 @@ button {
 		<c:if test="${not empty stores}">
 		<c:forEach var="store" items="${stores}" varStatus="status">
 		<div class="card">
-			<h2>${store.name}</h2>
+			<h2><a href="/stores/${store.id}">${store.name}</a></h2>
 			<p>${store.description}</p>
 			<p>Address: ${store.address}<p>
 			<p>Phone: ${store.phone}</p>
-			<button>Edit</button>
-			<button>Delete</button>
+			<form:form action="/stores/${store.id}" method="post">
+				<button type="submit">Delete</button>
+			</form:form>
 		</div>
 		</c:forEach>
 		</c:if>
