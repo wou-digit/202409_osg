@@ -14,6 +14,10 @@ import com.example.__osg.entity.User;
 
 public class CustomUserDetails implements UserDetails {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6721766278465777084L;
 	private User user;
 	
 	// Default Constructor

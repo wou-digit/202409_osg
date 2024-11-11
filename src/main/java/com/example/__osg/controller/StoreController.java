@@ -3,6 +3,7 @@ package com.example.__osg.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.example.__osg.entity.Store;
 import com.example.__osg.exception.StoreNotFoundException;
+import com.example.__osg.service.CustomUserDetails;
 import com.example.__osg.service.StoreService;
 
 @Controller
@@ -23,11 +25,12 @@ public class StoreController {
 	private StoreService storeService;
 	
 	@GetMapping("/stores")
-	public String getAllStores(Model model) {
+	public String getAllStores(Model model, @AuthenticationPrincipal CustomUserDetails loggedinuser) {
 		List<Store> stores = storeService.getAllStores();
 		
 		if(stores != null) {
 			model.addAttribute("stores", stores);
+			model.addAttribute("username", loggedinuser.getUsername());
 		}
 		
 		return "stores";

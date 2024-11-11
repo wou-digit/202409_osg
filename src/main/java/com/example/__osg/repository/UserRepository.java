@@ -10,5 +10,5 @@ import com.example.__osg.entity.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	@Query("SELECT u FROM User u WHERE u.username = :username")
-	public User getUserByUsername(String username);
+	public User findByUsername(String username);
 }

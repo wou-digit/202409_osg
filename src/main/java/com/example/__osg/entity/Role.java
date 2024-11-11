@@ -15,6 +15,14 @@ public class Role {
 	private Long id;
 	
 	private String name;
+	
+	public Role() {
+		//default constructor
+	}
+	
+	public Role(String name) {
+		this.name = name;
+	}
 
 	// Getters and Setters
 	public Long getId() {
