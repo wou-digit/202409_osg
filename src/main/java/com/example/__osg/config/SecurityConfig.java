@@ -52,6 +52,7 @@ public class SecurityConfig {
 				.requestMatchers("/stores/{id}/update").hasAnyAuthority("USER", "ADMIN")
 				.requestMatchers("/dashboard").hasAuthority("ADMIN")
 				.requestMatchers("/users/{id}").hasAnyAuthority("USER", "ADMIN")
+				.requestMatchers("/logs").hasAuthority("ADMIN")
 				.anyRequest().authenticated()
 			)
 			.formLogin(login -> login
