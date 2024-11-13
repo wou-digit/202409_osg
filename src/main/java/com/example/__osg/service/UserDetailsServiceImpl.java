@@ -1,8 +1,5 @@
 package com.example.__osg.service;
 
-import java.util.Date;
-
-import org.hibernate.type.descriptor.jdbc.TimestampUtcAsOffsetDateTimeJdbcType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -543,3 +543,11 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 
 2024-11-13 14:40:32 - Accessed by user 'admin' 
 
+2024-11-13 14:41:51 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+
+2024-11-13 14:41:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-13 14:41:52 - HikariPool-1 - Shutdown initiated...
+
+2024-11-13 14:41:52 - HikariPool-1 - Shutdown completed.
+
