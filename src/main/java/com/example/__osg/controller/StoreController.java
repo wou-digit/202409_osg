@@ -91,6 +91,7 @@ public class StoreController {
 	public String searchStore(Model model, @RequestParam("keyword") String keyword) {
 		List<Store> stores = storeService.searchStores(keyword);
 		model.addAttribute("stores", stores);
+		
 		return "stores";
 	}
 }

@@ -10,4 +10,14 @@ public class CommonController {
 	public String getHomepage() {
 		return "index";
 	}
+	
+	@GetMapping("/about")
+	public String getAboutPage() {
+		return "about";
+	}
+	
+	@GetMapping("/contact")
+	public String getContactPage() {
+		return "contact";
+	}
 }

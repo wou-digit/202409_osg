@@ -59,7 +59,7 @@
 	margin-bottom: 2px;
 }
 .card button:hover {
-	background: #a8e6cf;
+	background: #42b883;
 }
 .container-search {
 	margin-top: 20px;
@@ -135,6 +135,10 @@ footer {
 			</sec:authorize>
 		</div>
 		</c:forEach>
+		</c:if>
+		
+		<c:if test="${empty stores}">
+		<p style="color: red;">No Store found.</p>
 		</c:if>
 		
 	</div>
