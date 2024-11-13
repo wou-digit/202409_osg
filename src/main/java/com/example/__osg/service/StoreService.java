@@ -57,4 +57,8 @@ public class StoreService {
 			return null;
 		}
 	}
+	
+	public List<Store> searchStores(String keyword) {
+		return storeRepository.findStoresByKeyword(keyword);
+	}
 }

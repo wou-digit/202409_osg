@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,13 +47,25 @@
 .card {
 	margin: 5px 10px;
 	padding: 5px 5px;
-	height: 240px;
+	height: 250px;
 	width: 300px;
 	text-align: center;
-	border: 1px solid #000;
+	border: 1px solid #a8e6cf;
 	border-radius: 5px;
 }
-
+.card button {
+	width: 100%;
+	border: none;
+	margin-bottom: 2px;
+}
+.card button:hover {
+	background: #a8e6cf;
+}
+.container-search {
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
 button {
 	width: 100px;
 }
@@ -70,11 +83,14 @@ footer {
 				<a href="/about">About</a>
 				<a href="/contact">Contact</a>
 				<a href="/register">Register</a>
+				<a href="/stores">Stores</a>
+				
 			</div>
 			<div class="navbar-right">
-				<c:if test="${not empty username}">
-				<a href="#">@${username}</a>
-				</c:if>
+			
+				<sec:authorize access="isAuthenticated()">
+				<a href="#">@<sec:authentication property="name" /></a>
+				</sec:authorize>
 				
 				<c:if test="${empty pageContext.request.remoteUser}">
 				<a href="/signin">Signin</a>
@@ -88,21 +104,35 @@ footer {
 			</div>
 		</div>
 	
+		<sec:authorize access="hasAuthority('ADMIN')">
 		<p>Add New Store <a href="/stores/new">+</a></p>
+		</sec:authorize>
+	</div>
+	
+	<div class="container-search">
+		<div class="container-search">
+			<form:form action="/search" method="post">
+				<input type="text" name="keyword" />
+				<button type="submit">Search</button>
+			</form:form>
+		</div>
 	</div>
 	
 	<div class="container-flex">
-		
 		<c:if test="${not empty stores}">
 		<c:forEach var="store" items="${stores}" varStatus="status">
 		<div class="card">
-			<h2><a href="/stores/${store.id}">${store.name}</a></h2>
+			<h2>${store.name}</h2>
 			<p>${store.description}</p>
 			<p>Address: ${store.address}<p>
 			<p>Phone: ${store.phone}</p>
+			
+			<sec:authorize access="hasAuthority('ADMIN')">
+			<a href="/stores/${store.id}"><button>Edit</button></a>
 			<form:form action="/stores/${store.id}" method="post">
 				<button type="submit">Delete</button>
 			</form:form>
+			</sec:authorize>
 		</div>
 		</c:forEach>
 		</c:if>

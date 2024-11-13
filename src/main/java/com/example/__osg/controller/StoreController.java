@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.__osg.entity.Store;
 import com.example.__osg.exception.StoreNotFoundException;
@@ -84,5 +85,12 @@ public class StoreController {
 			model.addAttribute("errorMessage", "Cannot update store.");
 			return "stores";
 		}
+	}
+	
+	@PostMapping("/search")
+	public String searchStore(Model model, @RequestParam("keyword") String keyword) {
+		List<Store> stores = storeService.searchStores(keyword);
+		model.addAttribute("stores", stores);
+		return "stores";
 	}
 }

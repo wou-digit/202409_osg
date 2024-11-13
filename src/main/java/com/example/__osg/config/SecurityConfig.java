@@ -45,9 +45,13 @@ public class SecurityConfig {
 				.requestMatchers("/register").permitAll()
 				.requestMatchers("register/new").permitAll()
 				.requestMatchers("/").permitAll()
+				.requestMatchers("/about").permitAll()
+				.requestMatchers("/contact").permitAll()
 				.requestMatchers("/stores/new").hasAnyAuthority("USER", "ADMIN")
 				.requestMatchers("/stores/{id}").hasAnyAuthority("USER", "ADMIN")
 				.requestMatchers("/stores/{id}/update").hasAnyAuthority("USER", "ADMIN")
+				.requestMatchers("/dashboard").hasAuthority("ADMIN")
+				.requestMatchers("/users/{id}").hasAnyAuthority("USER", "ADMIN")
 				.anyRequest().authenticated()
 			)
 			.formLogin(login -> login
