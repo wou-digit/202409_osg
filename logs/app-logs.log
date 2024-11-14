@@ -1,553 +1,296 @@
-2024-11-13 13:49:05 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 13:49:05 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 13:49:05 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-11-13 13:49:05 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-11-13 13:49:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 13:49:07 - Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
-2024-11-13 13:49:08 - Tomcat initialized with port 8080 (http)
-2024-11-13 13:49:08 - Starting service [Tomcat]
-2024-11-13 13:49:08 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 13:49:08 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 13:49:08 - Initializing Spring embedded WebApplicationContext
-2024-11-13 13:49:08 - Root WebApplicationContext: initialization completed in 3144 ms
-2024-11-13 13:49:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 13:49:09 - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-13 13:49:09 - HHH000026: Second-level cache disabled
-2024-11-13 13:49:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 13:49:09 - HikariPool-1 - Starting...
-2024-11-13 13:49:10 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16a90ff4
-2024-11-13 13:49:10 - HikariPool-1 - Start completed.
-2024-11-13 13:49:10 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 13:49:10 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 13:49:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 13:49:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:49:11 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-13 13:49:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 13:49:12 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 13:49:12 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 13:49:13 - Adding welcome page template: index
-2024-11-13 13:49:14 - LiveReload server is running on port 35729
-2024-11-13 13:49:14 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 13:49:14 - Started Application in 9.458 seconds (process running for 10.277)
-2024-11-13 13:49:15 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 13:49:15 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 13:49:15 - Completed initialization in 0 ms
-2024-11-13 13:50:07 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
-2024-11-13 13:50:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:50:07 - HikariPool-1 - Shutdown initiated...
-2024-11-13 13:50:07 - HikariPool-1 - Shutdown completed.
-2024-11-13 13:50:08 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 13:50:08 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 13:50:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 13:50:08 - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
-2024-11-13 13:50:08 - Tomcat initialized with port 8080 (http)
-2024-11-13 13:50:08 - Starting service [Tomcat]
-2024-11-13 13:50:08 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 13:50:08 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 13:50:08 - Initializing Spring embedded WebApplicationContext
-2024-11-13 13:50:08 - Root WebApplicationContext: initialization completed in 621 ms
-2024-11-13 13:50:08 - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [9C6BEA744A5F1D05383D0FAC2FB4E62D]
-2024-11-13 13:50:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 13:50:08 - HHH000026: Second-level cache disabled
-2024-11-13 13:50:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 13:50:08 - HikariPool-2 - Starting...
-2024-11-13 13:50:08 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fce26e1
-2024-11-13 13:50:08 - HikariPool-2 - Start completed.
-2024-11-13 13:50:08 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 13:50:08 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 13:50:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 13:50:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:50:09 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 13:50:09 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 13:50:09 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 13:50:09 - Adding welcome page template: index
-2024-11-13 13:50:09 - LiveReload server is running on port 35729
-2024-11-13 13:50:09 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 13:50:09 - Started Application in 1.283 seconds (process running for 65.371)
-2024-11-13 13:50:09 - Condition evaluation unchanged
-2024-11-13 13:50:22 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 13:50:22 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 13:50:22 - Completed initialization in 0 ms
-2024-11-13 13:51:37 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 13:51:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:51:37 - HikariPool-2 - Shutdown initiated...
-2024-11-13 13:51:37 - HikariPool-2 - Shutdown completed.
-2024-11-13 13:51:38 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 13:51:38 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 13:51:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 13:51:38 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
-2024-11-13 13:51:38 - Tomcat initialized with port 8080 (http)
-2024-11-13 13:51:38 - Starting service [Tomcat]
-2024-11-13 13:51:38 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 13:51:38 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 13:51:38 - Initializing Spring embedded WebApplicationContext
-2024-11-13 13:51:38 - Root WebApplicationContext: initialization completed in 513 ms
-2024-11-13 13:51:38 - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [231C6F5159AD9A22C4E501B8D6CA39EC]
-2024-11-13 13:51:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 13:51:38 - HHH000026: Second-level cache disabled
-2024-11-13 13:51:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 13:51:38 - HikariPool-3 - Starting...
-2024-11-13 13:51:38 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@480d604f
-2024-11-13 13:51:38 - HikariPool-3 - Start completed.
-2024-11-13 13:51:38 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 13:51:38 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 13:51:38 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 13:51:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:51:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 13:51:39 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 13:51:39 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 13:51:39 - Adding welcome page template: index
-2024-11-13 13:51:39 - LiveReload server is running on port 35729
-2024-11-13 13:51:39 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 13:51:39 - Started Application in 1.52 seconds (process running for 155.632)
-2024-11-13 13:51:39 - Condition evaluation unchanged
-2024-11-13 13:51:40 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 13:51:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:51:40 - HikariPool-3 - Shutdown initiated...
-2024-11-13 13:51:40 - HikariPool-3 - Shutdown completed.
-2024-11-13 13:51:41 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 13:51:41 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 13:51:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 13:51:41 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
-2024-11-13 13:51:41 - Tomcat initialized with port 8080 (http)
-2024-11-13 13:51:41 - Starting service [Tomcat]
-2024-11-13 13:51:41 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 13:51:41 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 13:51:41 - Initializing Spring embedded WebApplicationContext
-2024-11-13 13:51:41 - Root WebApplicationContext: initialization completed in 473 ms
-2024-11-13 13:51:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 13:51:41 - HHH000026: Second-level cache disabled
-2024-11-13 13:51:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 13:51:41 - HikariPool-4 - Starting...
-2024-11-13 13:51:41 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@514562d3
-2024-11-13 13:51:41 - HikariPool-4 - Start completed.
-2024-11-13 13:51:41 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 13:51:41 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 13:51:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 13:51:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:51:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 13:51:41 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 13:51:41 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 13:51:41 - Adding welcome page template: index
-2024-11-13 13:51:41 - LiveReload server is running on port 35729
-2024-11-13 13:51:41 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 13:51:41 - Started Application in 0.909 seconds (process running for 158.069)
-2024-11-13 13:51:41 - Condition evaluation unchanged
-2024-11-13 13:51:52 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 13:51:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:51:52 - HikariPool-4 - Shutdown initiated...
-2024-11-13 13:51:52 - HikariPool-4 - Shutdown completed.
-2024-11-13 13:51:52 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 13:51:52 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 13:51:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 13:51:52 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
-2024-11-13 13:51:52 - Tomcat initialized with port 8080 (http)
-2024-11-13 13:51:52 - Starting service [Tomcat]
-2024-11-13 13:51:52 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 13:51:53 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 13:51:53 - Initializing Spring embedded WebApplicationContext
-2024-11-13 13:51:53 - Root WebApplicationContext: initialization completed in 376 ms
-2024-11-13 13:51:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 13:51:53 - HHH000026: Second-level cache disabled
-2024-11-13 13:51:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 13:51:53 - HikariPool-5 - Starting...
-2024-11-13 13:51:53 - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@380eb18e
-2024-11-13 13:51:53 - HikariPool-5 - Start completed.
-2024-11-13 13:51:53 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 13:51:53 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 13:51:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 13:51:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:51:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 13:51:53 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 13:51:53 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 13:51:53 - Adding welcome page template: index
-2024-11-13 13:51:53 - LiveReload server is running on port 35729
-2024-11-13 13:51:53 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 13:51:53 - Started Application in 0.881 seconds (process running for 169.679)
-2024-11-13 13:51:53 - Condition evaluation unchanged
-2024-11-13 13:53:07 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 13:53:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:53:07 - HikariPool-5 - Shutdown initiated...
-2024-11-13 13:53:07 - HikariPool-5 - Shutdown completed.
-2024-11-13 13:53:08 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 13:53:08 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 13:53:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 13:53:08 - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
-2024-11-13 13:53:08 - Tomcat initialized with port 8080 (http)
-2024-11-13 13:53:08 - Starting service [Tomcat]
-2024-11-13 13:53:08 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 13:53:08 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 13:53:08 - Initializing Spring embedded WebApplicationContext
-2024-11-13 13:53:08 - Root WebApplicationContext: initialization completed in 387 ms
-2024-11-13 13:53:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 13:53:08 - HHH000026: Second-level cache disabled
-2024-11-13 13:53:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 13:53:08 - HikariPool-6 - Starting...
-2024-11-13 13:53:08 - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@344002c3
-2024-11-13 13:53:08 - HikariPool-6 - Start completed.
-2024-11-13 13:53:08 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 13:53:08 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 13:53:08 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 13:53:08 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 13:53:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 13:53:08 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 13:53:08 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 13:53:08 - Adding welcome page template: index
-2024-11-13 13:53:08 - LiveReload server is running on port 35729
-2024-11-13 13:53:08 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 13:53:08 - Started Application in 0.761 seconds (process running for 244.843)
-2024-11-13 13:53:08 - Condition evaluation unchanged
-2024-11-13 13:53:12 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 13:53:12 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 13:53:12 - Completed initialization in 2 ms
-2024-11-13 14:02:26 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 14:02:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:02:26 - HikariPool-6 - Shutdown initiated...
-2024-11-13 14:02:26 - HikariPool-6 - Shutdown completed.
-2024-11-13 14:02:26 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 14:02:26 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 14:02:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 14:02:26 - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
-2024-11-13 14:02:26 - Tomcat initialized with port 8080 (http)
-2024-11-13 14:02:26 - Starting service [Tomcat]
-2024-11-13 14:02:26 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 14:02:26 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 14:02:26 - Initializing Spring embedded WebApplicationContext
-2024-11-13 14:02:26 - Root WebApplicationContext: initialization completed in 416 ms
-2024-11-13 14:02:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 14:02:26 - HHH000026: Second-level cache disabled
-2024-11-13 14:02:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 14:02:26 - HikariPool-7 - Starting...
-2024-11-13 14:02:26 - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e1ee28e
-2024-11-13 14:02:26 - HikariPool-7 - Start completed.
-2024-11-13 14:02:26 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 14:02:26 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 14:02:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 14:02:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:02:27 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonController' defined in file [C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes\com\example\__osg\controller\CommonController.class]: Failed to instantiate [com.example.__osg.controller.CommonController]: Constructor threw exception
-2024-11-13 14:02:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:02:27 - HikariPool-7 - Shutdown initiated...
-2024-11-13 14:02:27 - HikariPool-7 - Shutdown completed.
-2024-11-13 14:02:27 - Stopping service [Tomcat]
-2024-11-13 14:02:27 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-11-13 14:02:27 - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commonController' defined in file [C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes\com\example\__osg\controller\CommonController.class]: Failed to instantiate [com.example.__osg.controller.CommonController]: Constructor threw exception
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.13.jar:6.1.13]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.4.jar:3.3.4]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
-	at com.example.__osg.Application.main(Application.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.__osg.controller.CommonController]: Constructor threw exception
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94) ~[spring-beans-6.1.13.jar:6.1.13]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331) ~[spring-beans-6.1.13.jar:6.1.13]
-	... 20 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "enum Identifier" to complete EnumHeader
-	Syntax error, insert "EnumBody" to complete EnumDeclaration
-
-	at com.example.__osg.controller.CommonController.<init>(CommonController.java:14) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.13.jar:6.1.13]
-	... 22 common frames omitted
-2024-11-13 14:04:05 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 14:04:05 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 14:04:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 14:04:05 - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
-2024-11-13 14:04:05 - Tomcat initialized with port 8080 (http)
-2024-11-13 14:04:05 - Starting service [Tomcat]
-2024-11-13 14:04:05 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 14:04:05 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 14:04:05 - Initializing Spring embedded WebApplicationContext
-2024-11-13 14:04:05 - Root WebApplicationContext: initialization completed in 335 ms
-2024-11-13 14:04:05 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 14:04:05 - HHH000026: Second-level cache disabled
-2024-11-13 14:04:05 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 14:04:05 - HikariPool-8 - Starting...
-2024-11-13 14:04:05 - HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20310a38
-2024-11-13 14:04:05 - HikariPool-8 - Start completed.
-2024-11-13 14:04:05 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 14:04:05 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 14:04:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 14:04:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:04:05 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 14:04:05 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 14:04:05 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 14:04:05 - Adding welcome page template: index
-2024-11-13 14:04:05 - LiveReload server is running on port 35729
-2024-11-13 14:04:05 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 14:04:05 - Started Application in 0.789 seconds (process running for 901.874)
-2024-11-13 14:04:05 - Condition evaluation unchanged
-2024-11-13 14:04:08 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 14:04:08 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 14:04:08 - Completed initialization in 1 ms
-2024-11-13 14:04:37 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 14:04:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:04:37 - HikariPool-8 - Shutdown initiated...
-2024-11-13 14:04:37 - HikariPool-8 - Shutdown completed.
-2024-11-13 14:04:38 - Starting Application using Java 21.0.1 with PID 2572 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 14:04:38 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 14:04:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 14:04:38 - Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
-2024-11-13 14:04:38 - Tomcat initialized with port 8080 (http)
-2024-11-13 14:04:38 - Starting service [Tomcat]
-2024-11-13 14:04:38 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 14:04:38 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 14:04:38 - Initializing Spring embedded WebApplicationContext
-2024-11-13 14:04:38 - Root WebApplicationContext: initialization completed in 331 ms
-2024-11-13 14:04:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 14:04:38 - HHH000026: Second-level cache disabled
-2024-11-13 14:04:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 14:04:38 - HikariPool-9 - Starting...
-2024-11-13 14:04:38 - HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6112accf
-2024-11-13 14:04:38 - HikariPool-9 - Start completed.
-2024-11-13 14:04:38 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 14:04:38 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 14:04:38 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 14:04:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:04:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 14:04:38 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 14:04:38 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 14:04:38 - Adding welcome page template: index
-2024-11-13 14:04:38 - LiveReload server is running on port 35729
-2024-11-13 14:04:38 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 14:04:38 - Started Application in 0.739 seconds (process running for 934.858)
-2024-11-13 14:04:38 - Condition evaluation unchanged
-2024-11-13 14:11:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 14:11:49 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 14:11:49 - Completed initialization in 1 ms
-2024-11-13 14:26:35 - Starting Application using Java 21.0.1 with PID 12340 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 14:26:35 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 14:26:35 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-11-13 14:26:35 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-11-13 14:26:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 14:26:36 - Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
-2024-11-13 14:26:38 - Tomcat initialized with port 8080 (http)
-2024-11-13 14:26:38 - Starting service [Tomcat]
-2024-11-13 14:26:38 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 14:26:38 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 14:26:38 - Initializing Spring embedded WebApplicationContext
-2024-11-13 14:26:38 - Root WebApplicationContext: initialization completed in 2687 ms
-2024-11-13 14:26:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 14:26:38 - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-13 14:26:38 - HHH000026: Second-level cache disabled
-2024-11-13 14:26:39 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 14:26:39 - HikariPool-1 - Starting...
-2024-11-13 14:26:39 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7953e5cb
-2024-11-13 14:26:39 - HikariPool-1 - Start completed.
-2024-11-13 14:26:39 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 14:26:39 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 14:26:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 14:26:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:26:41 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-13 14:26:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 14:26:42 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 14:26:42 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 14:26:42 - Adding welcome page template: index
-2024-11-13 14:26:42 - LiveReload server is running on port 35729
-2024-11-13 14:26:42 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 14:26:42 - Started Application in 7.826 seconds (process running for 8.436)
-2024-11-13 14:26:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 14:26:45 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 14:26:45 - Completed initialization in 2 ms
-2024-11-13 14:27:15 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 14:27:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:27:15 - HikariPool-1 - Shutdown initiated...
-2024-11-13 14:27:15 - HikariPool-1 - Shutdown completed.
-2024-11-13 14:27:15 - Starting Application using Java 21.0.1 with PID 12340 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-2024-11-13 14:27:15 - No active profile set, falling back to 1 default profile: "default"
-2024-11-13 14:27:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-13 14:27:15 - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
-2024-11-13 14:27:16 - Tomcat initialized with port 8080 (http)
-2024-11-13 14:27:16 - Starting service [Tomcat]
-2024-11-13 14:27:16 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-13 14:27:16 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2024-11-13 14:27:16 - Initializing Spring embedded WebApplicationContext
-2024-11-13 14:27:16 - Root WebApplicationContext: initialization completed in 734 ms
-2024-11-13 14:27:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-13 14:27:16 - HHH000026: Second-level cache disabled
-2024-11-13 14:27:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-13 14:27:16 - HikariPool-2 - Starting...
-2024-11-13 14:27:16 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7211b566
-2024-11-13 14:27:16 - HikariPool-2 - Start completed.
-2024-11-13 14:27:16 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-11-13 14:27:16 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-13 14:27:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-13 14:27:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:27:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-13 14:27:16 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-2024-11-13 14:27:16 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-2024-11-13 14:27:16 - Adding welcome page template: index
-2024-11-13 14:27:16 - LiveReload server is running on port 35729
-2024-11-13 14:27:16 - Tomcat started on port 8080 (http) with context path '/'
-2024-11-13 14:27:16 - Started Application in 1.403 seconds (process running for 42.342)
-2024-11-13 14:27:16 - Condition evaluation unchanged
-2024-11-13 14:27:19 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-13 14:27:19 - Initializing Servlet 'dispatcherServlet'
-2024-11-13 14:27:19 - Completed initialization in 0 ms
-2024-11-13 14:30:32 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-11-13 14:30:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-13 14:30:32 - HikariPool-2 - Shutdown initiated...
-2024-11-13 14:30:32 - HikariPool-2 - Shutdown completed.
-2024-11-13 14:30:32 - Starting Application using Java 21.0.1 with PID 12340 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-
-2024-11-13 14:30:32 - No active profile set, falling back to 1 default profile: "default"
-
-2024-11-13 14:30:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-
-2024-11-13 14:30:32 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
-
-2024-11-13 14:30:32 - Tomcat initialized with port 8080 (http)
-
-2024-11-13 14:30:32 - Starting service [Tomcat]
-
-2024-11-13 14:30:32 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-
-2024-11-13 14:30:33 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-
-2024-11-13 14:30:33 - Initializing Spring embedded WebApplicationContext
-
-2024-11-13 14:30:33 - Root WebApplicationContext: initialization completed in 565 ms
-
-2024-11-13 14:30:33 - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [34C75B3F50DFD5E4B47B36AD1535BC41]
-
-2024-11-13 14:30:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
-
-2024-11-13 14:30:33 - HHH000026: Second-level cache disabled
-
-2024-11-13 14:30:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
-
-2024-11-13 14:30:33 - HikariPool-3 - Starting...
-
-2024-11-13 14:30:33 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5018019a
-
-2024-11-13 14:30:33 - HikariPool-3 - Start completed.
-
-2024-11-13 14:30:33 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-
-2024-11-13 14:30:33 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-
-2024-11-13 14:30:33 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-
-2024-11-13 14:30:33 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-
-2024-11-13 14:30:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-
-2024-11-13 14:30:33 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-
-2024-11-13 14:30:33 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-
-2024-11-13 14:30:33 - Adding welcome page template: index
-
-2024-11-13 14:30:33 - LiveReload server is running on port 35729
-
-2024-11-13 14:30:33 - Tomcat started on port 8080 (http) with context path '/'
-
-2024-11-13 14:30:33 - Started Application in 1.23 seconds (process running for 239.127)
-
-2024-11-13 14:30:33 - Condition evaluation unchanged
-
-2024-11-13 14:30:37 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-
-2024-11-13 14:30:37 - Initializing Servlet 'dispatcherServlet'
-
-2024-11-13 14:30:37 - Completed initialization in 1 ms
-
-2024-11-13 14:40:17 - Starting Application using Java 21.0.1 with PID 5988 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
-
-2024-11-13 14:40:17 - No active profile set, falling back to 1 default profile: "default"
-
-2024-11-13 14:40:17 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-
-2024-11-13 14:40:17 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-
-2024-11-13 14:40:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-
-2024-11-13 14:40:18 - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
-
-2024-11-13 14:40:19 - Tomcat initialized with port 8080 (http)
-
-2024-11-13 14:40:19 - Starting service [Tomcat]
-
-2024-11-13 14:40:19 - Starting Servlet engine: [Apache Tomcat/10.1.30]
-
-2024-11-13 14:40:19 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-
-2024-11-13 14:40:19 - Initializing Spring embedded WebApplicationContext
-
-2024-11-13 14:40:19 - Root WebApplicationContext: initialization completed in 2512 ms
-
-2024-11-13 14:40:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
-
-2024-11-13 14:40:19 - HHH000412: Hibernate ORM core version 6.5.3.Final
-
-2024-11-13 14:40:20 - HHH000026: Second-level cache disabled
-
-2024-11-13 14:40:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
-
-2024-11-13 14:40:20 - HikariPool-1 - Starting...
-
-2024-11-13 14:40:20 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@627a51af
-
-2024-11-13 14:40:20 - HikariPool-1 - Start completed.
-
-2024-11-13 14:40:20 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-
-2024-11-13 14:40:20 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-
-2024-11-13 14:40:21 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-
-2024-11-13 14:40:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-
-2024-11-13 14:40:22 - Hibernate is in classpath; If applicable, HQL parser will be used.
-
-2024-11-13 14:40:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-
-2024-11-13 14:40:23 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
-
-2024-11-13 14:40:23 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
-
-2024-11-13 14:40:23 - Adding welcome page template: index
-
-2024-11-13 14:40:24 - LiveReload server is running on port 35729
-
-2024-11-13 14:40:24 - Tomcat started on port 8080 (http) with context path '/'
-
-2024-11-13 14:40:24 - Started Application in 7.706 seconds (process running for 8.301)
-
-2024-11-13 14:40:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-
-2024-11-13 14:40:27 - Initializing Servlet 'dispatcherServlet'
-
-2024-11-13 14:40:27 - Completed initialization in 0 ms
-
-2024-11-13 14:40:32 - Accessed by user 'admin' 
-
-2024-11-13 14:41:51 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-
-2024-11-13 14:41:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
-
-2024-11-13 14:41:52 - HikariPool-1 - Shutdown initiated...
-
-2024-11-13 14:41:52 - HikariPool-1 - Shutdown completed.
+2024-11-14 09:40:33 - Starting Application using Java 21.0.1 with PID 8156 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
+
+2024-11-14 09:40:33 - No active profile set, falling back to 1 default profile: "default"
+
+2024-11-14 09:40:33 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+
+2024-11-14 09:40:33 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+2024-11-14 09:40:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+2024-11-14 09:40:36 - Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
+
+2024-11-14 09:40:38 - Tomcat initialized with port 8080 (http)
+
+2024-11-14 09:40:38 - Starting service [Tomcat]
+
+2024-11-14 09:40:38 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+
+2024-11-14 09:40:38 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2024-11-14 09:40:39 - Initializing Spring embedded WebApplicationContext
+
+2024-11-14 09:40:39 - Root WebApplicationContext: initialization completed in 5025 ms
+
+2024-11-14 09:40:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+
+2024-11-14 09:40:39 - HHH000412: Hibernate ORM core version 6.5.3.Final
+
+2024-11-14 09:40:40 - HHH000026: Second-level cache disabled
+
+2024-11-14 09:40:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+
+2024-11-14 09:40:41 - HikariPool-1 - Starting...
+
+2024-11-14 09:40:41 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ce0e603
+
+2024-11-14 09:40:41 - HikariPool-1 - Start completed.
+
+2024-11-14 09:40:41 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+
+2024-11-14 09:40:41 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+2024-11-14 09:40:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+
+2024-11-14 09:40:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:40:44 - Hibernate is in classpath; If applicable, HQL parser will be used.
+
+2024-11-14 09:40:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+2024-11-14 09:40:51 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+
+2024-11-14 09:40:51 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+
+2024-11-14 09:40:52 - Adding welcome page template: index
+
+2024-11-14 09:40:56 - LiveReload server is running on port 35729
+
+2024-11-14 09:40:56 - Tomcat started on port 8080 (http) with context path '/'
+
+2024-11-14 09:40:56 - Started Application in 23.884 seconds (process running for 25.142)
+
+2024-11-14 09:40:58 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2024-11-14 09:40:58 - Initializing Servlet 'dispatcherServlet'
+
+2024-11-14 09:40:59 - Completed initialization in 9 ms
+
+2024-11-14 09:41:12 - Accessed by user 'admin' 
+
+2024-11-14 09:41:53 - Accessed by user 'admin' 
+
+2024-11-14 09:42:01 - Resolved [com.example.__osg.exception.StoreNotFoundException: Store not found.]
+
+2024-11-14 09:44:01 - Accessed by user 'hadrihl' 
+
+2024-11-14 09:46:16 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+
+2024-11-14 09:46:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:46:16 - HikariPool-1 - Shutdown initiated...
+
+2024-11-14 09:46:16 - HikariPool-1 - Shutdown completed.
+
+2024-11-14 09:46:16 - Starting Application using Java 21.0.1 with PID 8156 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
+
+2024-11-14 09:46:16 - No active profile set, falling back to 1 default profile: "default"
+
+2024-11-14 09:46:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+2024-11-14 09:46:16 - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+
+2024-11-14 09:46:16 - Tomcat initialized with port 8080 (http)
+
+2024-11-14 09:46:16 - Starting service [Tomcat]
+
+2024-11-14 09:46:16 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+
+2024-11-14 09:46:16 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2024-11-14 09:46:16 - Initializing Spring embedded WebApplicationContext
+
+2024-11-14 09:46:16 - Root WebApplicationContext: initialization completed in 724 ms
+
+2024-11-14 09:46:17 - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [14D50012673A7005C59FC2A37A4555B4]
+
+2024-11-14 09:46:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+
+2024-11-14 09:46:17 - HHH000026: Second-level cache disabled
+
+2024-11-14 09:46:17 - No LoadTimeWeaver setup: ignoring JPA class transformer
+
+2024-11-14 09:46:17 - HikariPool-2 - Starting...
+
+2024-11-14 09:46:17 - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59deb171
+
+2024-11-14 09:46:17 - HikariPool-2 - Start completed.
+
+2024-11-14 09:46:17 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+
+2024-11-14 09:46:17 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+2024-11-14 09:46:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+
+2024-11-14 09:46:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:46:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+2024-11-14 09:46:17 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+
+2024-11-14 09:46:17 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+
+2024-11-14 09:46:17 - Adding welcome page template: index
+
+2024-11-14 09:46:17 - LiveReload server is running on port 35729
+
+2024-11-14 09:46:17 - Tomcat started on port 8080 (http) with context path '/'
+
+2024-11-14 09:46:17 - Started Application in 1.712 seconds (process running for 346.232)
+
+2024-11-14 09:46:17 - Condition evaluation unchanged
+
+2024-11-14 09:46:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2024-11-14 09:46:21 - Initializing Servlet 'dispatcherServlet'
+
+2024-11-14 09:46:21 - Completed initialization in 1 ms
+
+2024-11-14 09:46:26 - Accessed by user 'hadrihl' 
+
+2024-11-14 09:46:48 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+
+2024-11-14 09:46:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:46:48 - HikariPool-2 - Shutdown initiated...
+
+2024-11-14 09:46:48 - HikariPool-2 - Shutdown completed.
+
+2024-11-14 09:46:48 - Starting Application using Java 21.0.1 with PID 8156 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
+
+2024-11-14 09:46:48 - No active profile set, falling back to 1 default profile: "default"
+
+2024-11-14 09:46:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+2024-11-14 09:46:48 - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+
+2024-11-14 09:46:48 - Tomcat initialized with port 8080 (http)
+
+2024-11-14 09:46:48 - Starting service [Tomcat]
+
+2024-11-14 09:46:48 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+
+2024-11-14 09:46:48 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2024-11-14 09:46:48 - Initializing Spring embedded WebApplicationContext
+
+2024-11-14 09:46:48 - Root WebApplicationContext: initialization completed in 536 ms
+
+2024-11-14 09:46:48 - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [31C4A78F0C6A5929E8FFDAAC5D74B19F]
+
+2024-11-14 09:46:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+
+2024-11-14 09:46:48 - HHH000026: Second-level cache disabled
+
+2024-11-14 09:46:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+
+2024-11-14 09:46:48 - HikariPool-3 - Starting...
+
+2024-11-14 09:46:48 - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c7a969b
+
+2024-11-14 09:46:48 - HikariPool-3 - Start completed.
+
+2024-11-14 09:46:48 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+
+2024-11-14 09:46:48 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+2024-11-14 09:46:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+
+2024-11-14 09:46:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:46:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+2024-11-14 09:46:49 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+
+2024-11-14 09:46:49 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+
+2024-11-14 09:46:49 - Adding welcome page template: index
+
+2024-11-14 09:46:49 - LiveReload server is running on port 35729
+
+2024-11-14 09:46:49 - Tomcat started on port 8080 (http) with context path '/'
+
+2024-11-14 09:46:49 - Started Application in 1.138 seconds (process running for 377.783)
+
+2024-11-14 09:46:49 - Condition evaluation unchanged
+
+2024-11-14 09:46:53 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+
+2024-11-14 09:46:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:46:53 - HikariPool-3 - Shutdown initiated...
+
+2024-11-14 09:46:53 - HikariPool-3 - Shutdown completed.
+
+2024-11-14 09:46:54 - Starting Application using Java 21.0.1 with PID 8156 (C:\Users\hadrihl\Desktop\repo__\202409-osg\target\classes started by hadrihl in C:\Users\hadrihl\Desktop\repo__\202409-osg)
+
+2024-11-14 09:46:54 - No active profile set, falling back to 1 default profile: "default"
+
+2024-11-14 09:46:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+2024-11-14 09:46:54 - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+
+2024-11-14 09:46:54 - Tomcat initialized with port 8080 (http)
+
+2024-11-14 09:46:54 - Starting service [Tomcat]
+
+2024-11-14 09:46:54 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+
+2024-11-14 09:46:54 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2024-11-14 09:46:54 - Initializing Spring embedded WebApplicationContext
+
+2024-11-14 09:46:54 - Root WebApplicationContext: initialization completed in 591 ms
+
+2024-11-14 09:46:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+
+2024-11-14 09:46:54 - HHH000026: Second-level cache disabled
+
+2024-11-14 09:46:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+
+2024-11-14 09:46:54 - HikariPool-4 - Starting...
+
+2024-11-14 09:46:54 - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@372c231e
+
+2024-11-14 09:46:54 - HikariPool-4 - Start completed.
+
+2024-11-14 09:46:54 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+
+2024-11-14 09:46:54 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+
+2024-11-14 09:46:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+
+2024-11-14 09:46:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:46:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+2024-11-14 09:46:55 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+
+2024-11-14 09:46:55 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+
+2024-11-14 09:46:55 - Adding welcome page template: index
+
+2024-11-14 09:46:55 - LiveReload server is running on port 35729
+
+2024-11-14 09:46:55 - Tomcat started on port 8080 (http) with context path '/'
+
+2024-11-14 09:46:55 - Started Application in 1.186 seconds (process running for 383.601)
+
+2024-11-14 09:46:55 - Condition evaluation unchanged
+
+2024-11-14 09:46:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2024-11-14 09:46:55 - Initializing Servlet 'dispatcherServlet'
+
+2024-11-14 09:46:55 - Completed initialization in 0 ms
+
+2024-11-14 09:47:00 - Accessed by user 'hadrihl' 
+
+2024-11-14 09:47:24 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+
+2024-11-14 09:47:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+
+2024-11-14 09:47:24 - HikariPool-4 - Shutdown initiated...
+
+2024-11-14 09:47:24 - HikariPool-4 - Shutdown completed.
 
