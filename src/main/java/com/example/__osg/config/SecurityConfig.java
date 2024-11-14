@@ -9,7 +9,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.AccessDeniedHandler;
 
+import com.example.__osg.exception.CustomAccessDeniedHandler;
 import com.example.__osg.service.CustomUserDetails;
 import com.example.__osg.service.UserDetailsServiceImpl;
 
@@ -35,6 +37,10 @@ public class SecurityConfig {
 		auth.setUserDetailsService(userDetailsService());
 		auth.setPasswordEncoder(passwordEncoder());
 		return auth;
+	}
+	
+	public AccessDeniedHandler customAccessDeniedHandler() {
+		return new CustomAccessDeniedHandler();
 	}
 	
 	@Bean
@@ -65,6 +71,9 @@ public class SecurityConfig {
 				.invalidateHttpSession(true)
 				.logoutSuccessUrl("/")
 				.permitAll()
+			)
+			.exceptionHandling(ex -> ex
+				.accessDeniedHandler(customAccessDeniedHandler())
 			);
 		
 		return http.build();

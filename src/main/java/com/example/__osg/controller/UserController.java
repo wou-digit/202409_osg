@@ -1,11 +1,13 @@
 package com.example.__osg.controller;
 
+import java.nio.file.AccessDeniedException;
 import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.__osg.entity.Role;
 import com.example.__osg.entity.User;
+import com.example.__osg.exception.CustomAccessDeniedHandler;
 import com.example.__osg.service.UserService;
 
 @Controller
